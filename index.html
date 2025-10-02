@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VitaFruti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">V i t a   F r u t i</a>
+      <img src="img/Captura de pantalla 2025-10-01 185021.png" width="80" height="80" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="conocenos.html">¡Conócenos!</a></li>
+          <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
+          <li class="nav-item"><a class="nav-link" href="material.html">Material Digital</a></li>
+          <li class="nav-item"><a class="nav-link" href="locaciones.html">Locaciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 hero">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div>
+        <h1 class="display-5 fw-bold">Vita Fruti</h1>
+        <p class="lead">¡Elige Natural, Elige Salud! Escoge VitaFruti</p>
+      </div>
+      <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; box-shadow: 0 2px 8px rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+          src="https://www.canva.com/design/DAG0Bsp83Uw/4W_FkZ4Nn7h00ErUAwHsAQ/view?embed" allowfullscreen allow="fullscreen">
+        </iframe>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container d-flex flex-wrap justify-content-center align-items-start gap-4">
+      <div class="card h-100 text-center bg-light card-consejo" style="flex: 1 1 300px;">
+        <div class="card-body">
+          <h5 class="card-title">¡Realiza tus compras al mejor precio</h5>
+          <p class="card-text">¡Selecciona tu producto y aplica a la promoción!</p>
+        </div>
+      </div>
+
+      <div style="position: relative; width: 100%; height: 0; padding-top: 33.33%; box-shadow: 0 2px 8px rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
+          src="https://www.canva.com/design/DAGyERND-1s/ItlfTO9LA1XshygNPzoV5g/view?embed" allowfullscreen allow="fullscreen">
+        </iframe>
+      </div>
+      <a href="https://www.canva.com/design/DAGyERND-1s/ItlfTO9LA1XshygNPzoV5g/view" target="_blank" rel="noopener">
+        <img src="img/image.png" width="850" height="250" alt="Made with Canva">
+      </a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 text-center bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Productos</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-3"><h6>Piña + Jengibre + Menta - Q8</h6><img src="img/IMG_4998.jpeg" alt=""><button onclick="agregarAlCarrito('JePimenta', 5)">Agregar</button></div>
+                  <div class="card mb-3"><h6>Sandía + Limón + Hierbabuena - Q8</h6><img src="img/IMG_4999.jpeg" alt=""><button onclick="agregarAlCarrito('Libuena', 5)">Agregar</button></div>
+                  <div class="card mb-3"><h6>Papaya + Guayaba + Limón - Q8</h6><img src="img/IMG_4986.jpeg" alt=""><button onclick="agregarAlCarrito('Gualimón', 5)">Agregar</button></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-3"><h6>Mango + Maracuyá + Chía - Q8</h6><img src="img/IMG_4985.jpeg" alt=""><button onclick="agregarAlCarrito('Mangocuya', 5)">Agregar</button></div>
+                  <div class="card mb-3"><h6>Uva + Arándanos + Manzana - Q8</h6><img src="img/IMG_4987.jpeg" alt=""><button onclick="agregarAlCarrito('Umanzana', 5)">Agregar</button></div>
+                  <div class="card mb-3"><h6>Fresa + Kiwi + Limón - Q8</h6><img src="img/IMG_4984.jpeg" alt=""><button onclick="agregarAlCarrito('Frekiwi', 5)">Agregar</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 text-center bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Tu Carrito</h5>
+              <ul id="carrito" class="list-unstyled"></ul>
+              <h6 id="total">Total: Q0</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <div class="d-flex justify-content-center">
+      <div class="card h-100 text-center bg-light" style="max-width: 400px;">
+        <div class="card-body">
+          <div class="social">
+            <a href="https://www.instagram.com/vita_fruti?igsh=b2h5YTR0c2ZocTU3&utm_source=qr" target="_blank">
+              <button style="padding: 10px 20px; background-color: #94de2dcf; color: white; border: none; border-radius: 5px; font-size: 16px;">
+                Siguenos en Instagram
+              </button>
+                          <img src="img/Captura de pantalla 2025-10-01 191643.png" width="200" height="300" alt="">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4">
+    <p>&copy; VitaFruti | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
